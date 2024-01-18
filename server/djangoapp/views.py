@@ -14,7 +14,13 @@ import json
 logger = logging.getLogger(__name__)
 
 
-# Create your views here.
+# ./server/djangoapp/views.py
+
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'djangoapp/index.html')
+
 
 
 # Create an `about` view to render a static about page
